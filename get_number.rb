@@ -20,7 +20,7 @@ num_guesses = 0
 # Track whether the player has guessed correctly.
 guessed_it = false
 
-until == 10 || guessed_it
+until num_guesses == 10 || guessed_it
 
   puts "You've got #{10 - num_guesses} guesses left"
   print "Make a guess: "
@@ -30,6 +30,7 @@ until == 10 || guessed_it
   num_guesses += 1
 
   # Compare guess to the target.
+  # Print the appropriate message.
   if guess < target
     puts "Oops. Your guess was LOW."
   elsif guess > target
