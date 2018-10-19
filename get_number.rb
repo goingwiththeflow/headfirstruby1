@@ -20,7 +20,7 @@ num_guesses = 0
 # Track whether the player has guessed correctly.
 guessed_it = false
 
-while num_guesses < 10 && guessed_it == false
+until == 10 || guessed_it
 
   puts "You've got #{10 - num_guesses} guesses left"
   print "Make a guess: "
@@ -39,7 +39,7 @@ while num_guesses < 10 && guessed_it == false
     puts "You guessed my number in #{num_guesses} guesses!"
     guessed_it = true
   end
-  
+
 end
 
 #If player ran out of turns, tell them what the number was.
