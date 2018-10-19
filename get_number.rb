@@ -24,7 +24,6 @@ until num_guesses == 10 || guessed_it
 
   puts "You've got #{10 - num_guesses} guesses left"
   print "Make a guess: "
-  guess = gets
   guess = gets.to_i
 
   num_guesses += 1
